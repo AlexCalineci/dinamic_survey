@@ -1,0 +1,255 @@
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+
+/*
+ * Global add-ons
+ */
+
+.sub-header {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #eee;
+}
+
+/*
+ * Sidebar
+ */
+
+/* Hide for mobile, show later */
+.sidebar {
+	display: none;
+}
+@media (min-width: 768px) {
+	.sidebar {
+		position: fixed;
+		top: 51px;
+		bottom: 0;
+		left: 0;
+		z-index: 1000;
+		display: block;
+		padding: 15px;
+		overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+		background-color: #f5f5f5;
+		border-right: 1px solid #eee;
+	}
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+	margin-right: -21px; /* 20px padding + 1px border */
+	margin-bottom: 20px;
+	margin-left: -20px;
+}
+.nav-sidebar > li > a {
+	padding-right: 20px;
+	padding-left: 20px;
+}
+.nav-sidebar > .active > a {
+	color: #fff;
+	background-color: #428bca;
+}
+
+/*
+ * Main content
+ */
+
+.main {
+	padding: 20px;
+}
+@media (min-width: 768px) {
+	.main {
+		padding-right: 40px;
+		padding-left: 40px;
+	}
+}
+.main .page-header {
+	margin-top: 0;
+}
+
+/*curent used ccs for survey*/
+
+.navbar .btn {
+	margin-top: 5px;
+}
+
+body {
+	padding-top: 50px;
+	font-size: 12px;
+}
+
+.form-control {
+	font-size: 10px;
+}
+
+b {
+	font-size: 12px;
+}
+
+textarea {
+	max-width: 200px;
+	max-height: 100px;
+	min-height: 15px;
+	min-width: 50px;
+}
+
+.btn {
+	font-size: 10px;
+}
+
+.dropdown-menu {
+	font-size: 10px;
+}
+.panel-heading {
+	padding: 5px 15px;
+}
+
+.panel-heading b {
+	font-size: 12px;
+}
+
+.overflow {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.panel-body {
+	padding: 10px;
+}
+
+.window {
+	width: auto;
+	height: auto;
+	min-width: 14em;
+	min-height: 8em;
+}
+
+.window:hover, .window._jsPlumb_source_hover, .window._jsPlumb_target_hover {
+	border: 1px solid red;
+	color: red;
+	display: block;
+}
+
+
+#drop {
+  min-height: 500px;
+  min-width: 900px;
+  /*border: 3px dashed #ccc;*/
+  margin: 5px;
+  padding: 5px;
+  position: relative;
+}
+
+
+.dragged {
+	position: absolute;
+	width: 17.5em;
+	height: auto;
+}
+
+.selectedDiv {
+	border: 1px solid red;
+	color: red;
+	display: block;
+}
+
+.inputs {
+	width: auto;
+	height: auto;
+}
+
+.but {
+	float: left;
+	width: 18em;
+	height: 10em;
+}
+
+.but:hover {
+	border: 1px solid red;
+	color: red;
+	display: block;
+}
+
+.dashboard {
+	float: left;
+	width: 18em;
+	height: 10em;
+}
+
+.search {
+	width: auto;
+	height: auto;
+	position: relative;
+}
+
+.alert {
+	min-width: 20em;
+	min-height: 5em;
+	position: absolute;
+	right: 5px;
+	top: 5px;
+}
+
+.alert-info {
+	min-width: 20em;
+	min-height: 5em;
+	position: absolute;
+	right: 25px;
+	top: 60px;
+}
+
+.aLabel {
+	background-color: white;
+	padding: 0.4em;
+	font: 10px sans-serif;
+	color: #444;
+	z-index: 21;
+	border: 1px dotted red;
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+	cursor: pointer;
+	min-width:2em;
+	max-width:10.5em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.edit {
+	float: left;
+	width: 18em;
+	height: auto;
+}
+
+.inputEdits {
+	margin: 4px;
+	margin-right: 4px;
+	margin-bottom: 8px;
+	margin-left: 0px;
+}
+
+.bar {
+	width: 45px;
+	margin: 2px;
+}
+
+.modal .modal-body {
+	max-height: 270px;
+	overflow-y: auto;
+}
+
+.animatedColor {
+	background: red !important;
+	transition: 1s;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	-o-transition: 1s;
+}
+
+.undo{
+	margin-right: 2px;
+	margin-bottom: 4px;
+	margin-top:0px;
+	margin-left: 0px;
+}

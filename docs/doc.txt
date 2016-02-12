@@ -1,0 +1,33 @@
+I.Instalation
+
+1. run docs/db_sql in mysql(tables  - users,surveys,surveys details)
+2. put project in apache web server - htdocs
+
+For now the main page is index.php - but when u will implement it must be changed 
+so that your main page will be in index.php and redirects to other pages
+
+II.Description & How to use:
+ 
+1. Drag window to draggable area - make connections
+2. Put a title into menu input - if the name exists it will update the survey or else it will create it
+3. Empty the survey page from menu/empty
+4. open the survey by name entered/or if nothing entered chose from list
+5. Add/remove components and save - the survey details are in the table survey_details.
+6. Delete the entered survey by menu/delete entire survey.
+
+
+III. Project structure description
+
+.css - dasshboard.css(survey page css)
+	 - signin.css(login page css)
+.docs - doc.txt & db_sql
+.img - images folder - contains spinner
+.javascript - contains the jquery & jsplumb libs
+			- jplumb_survey & js_utils are the UI side javascript
+.lib  - contains bootstrap css framework for interface
+.php - contains the php files for DB manipulation
+
+	index.php - the main page for now
+	login.php - login page
+	logincheck.php - credential verification
+	logout.php - logout and destroy session
